@@ -11,6 +11,8 @@
   "author": "Shu Ding",
   "license": "MIT",
   "dependencies": {
+    "@wenzi7777/mplayer": "^0.1.0",
+    "hls.js": "^1.2.7",
     "next": "^12.1.0",
     "nextra": "^1.1.0",
     "nextra-theme-docs": "^1.2.2",
