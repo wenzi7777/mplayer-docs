@@ -1,6 +1,6 @@
 export default {
     github: 'https://github.com/wenzi7777/MPlayer',
-    docsRepositoryBase: 'https://github.com/wenzi7777/MPlayer-docs',
+    docsRepositoryBase: 'https://github.com/wenzi7777/mplayer-docs',
     logo: (
         <>
             <span className="mr-2 font-extrabold hidden md:inline">MPlayer</span>
