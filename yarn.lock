@@ -111,10 +111,10 @@
   "resolved" "https://registry.npmmirror.com/@types/warning/-/warning-3.0.0.tgz"
   "version" "3.0.0"
 
-"@wenzi7777/mplayer@^0.1.0":
-  "integrity" "sha512-UMw7xYeWmdoCyLOL/IL1zy4Ga4g2QFx5YV1qMLmnzvdsRG2Xw+xcC7iWIULHKWV8YWt+H9vyH39shAA8FOIRyA=="
-  "resolved" "https://registry.npmjs.org/@wenzi7777/mplayer/-/mplayer-0.1.0.tgz"
-  "version" "0.1.0"
+"@wenzi7777/mplayer@^0.0.8":
+  "integrity" "sha512-oZy42n1GEzTiEm+XxzyYa6lIGu3CzIHOZEHrtvWC801r3iN1QZ2WeYOLwAccscJ0+2neEGdCheH6dTJ+RefyHQ=="
+  "resolved" "https://registry.npmjs.org/@wenzi7777/mplayer/-/mplayer-0.0.8.tgz"
+  "version" "0.0.8"
   dependencies:
     "ejs" "^3.1.8"
     "git-revision-webpack-plugin" "^5.0.0"
