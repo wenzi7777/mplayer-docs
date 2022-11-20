@@ -11,8 +11,9 @@ class Player extends React.Component {
 
     componentDidMount() {
         window.Hls = Hls
-        const MPlayer = require('@wenzi7777/mplayer')
+        const MPlayer = require('../../public/mplayer.bundle.min')
         this.state.mplayer = new MPlayer(document.getElementById('mplayer'), {
+            lang: 'zh_CN',
             videos: [
                 {
                     title: '【VOCALOID IA】Moon-Viewing Recital "オツキミリサイタル"【Animation MV】',
