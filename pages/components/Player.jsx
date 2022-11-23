@@ -10,8 +10,12 @@ class Player extends React.Component {
     }
 
     componentDidMount() {
-        window.Hls = Hls
         const MPlayer = require('../../public/mplayer.bundle.min')
+        const flvjs = require('../../public/flv.min')
+        const dashjs = require('../../public/dash.all.min')
+        window.Hls = Hls
+        window.flvjs = flvjs.flvjs
+        window.dashjs = dashjs.dashjs
         this.state.mplayer = new MPlayer(document.getElementById('mplayer'), {
             lang: 'zh_CN',
             playerMode: 'normal',
