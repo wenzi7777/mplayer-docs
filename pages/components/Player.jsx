@@ -12,10 +12,8 @@ class Player extends React.Component {
     componentDidMount() {
         const MPlayer = require('../../public/mplayer.bundle.min')
         const flvjs = require('../../public/flv.min')
-        const dashjs = require('../../public/dash.all.min')
         window.Hls = Hls
         window.flvjs = flvjs
-        window.dashjs = dashjs
         this.state.mplayer = new MPlayer(document.getElementById('mplayer'), {
             lang: 'zh_CN',
             playerMode: 'normal',
@@ -37,7 +35,7 @@ class Player extends React.Component {
             preload: false,
             volume: 1,
             playbackRates: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
-            index: 0,
+            index: 1,
             infoPanel: ['basicVideoInfo', 'playerFPS', 'videoURL', 'connectionStatus', 'date', 'playerInfo'],
             contextMenu: [
                 {
@@ -71,15 +69,11 @@ class Player extends React.Component {
                     images: ['https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/PlasticMemories/ep1/images/isla.jpg']
                 },
                 {
-                    title: '[dash, qualities]Plastic Memories EP. 2',
-                    src: "https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/PlasticMemories/ep2/dash/360_out.mpd"
-                },
-                {
-                    title: '[native]Plastic Memories EP. 3',
+                    title: '[native]Plastic Memories EP. 2',
                     src: "https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/PlasticMemories/ep2/native/PlasticMemoriesEP2.mp4"
                 },
                 {
-                    title: '[flv]Your Lie in April EP. 3',
+                    title: '[flv]Your Lie in April EP. 1',
                     src: "https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/YourLieInApril/ep1/flv/EP1.flv"
                 }
             ]
