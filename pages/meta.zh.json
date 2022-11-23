@@ -3,5 +3,6 @@
   "start": "使用教程",
   "apis": "API",
   "mse": "MSE支持",
-  "events": "事件处理"
+  "events": "事件处理",
+  "license": "开源许可证"
 }
