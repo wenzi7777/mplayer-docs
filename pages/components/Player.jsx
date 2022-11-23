@@ -14,10 +14,69 @@ class Player extends React.Component {
         const MPlayer = require('../../public/mplayer.bundle.min')
         this.state.mplayer = new MPlayer(document.getElementById('mplayer'), {
             lang: 'zh_CN',
+            playerMode: 'normal',
+            autoplay: false,
+            hints: {
+                enabled: true,
+                elements: [
+                    {
+                        start: 10,
+                        end: 20,
+                        html: `<h1>TEST HINT</h1>`
+                    }
+                ]
+            },
+            theme: '#39c5bb',
+            loop: false,
+            tools: ['timeline', 'playPause', 'volumeControl', 'durationViewer', 'screenshot', 'playerSettings', 'enablePlaylist', 'subtitles', 'miniPlayer', 'theaterMode', 'fullscreen'],
+            hotkey: true,
+            preload: false,
+            volume: 1,
+            playbackRates: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
+            index: 0,
+            infoPanel: ['basicVideoInfo', 'playerFPS', 'videoURL', 'connectionStatus', 'date', 'playerInfo'],
+            contextMenu: [
+                {
+                    title: '关于MPlayer',
+                    targetFunction: 'openLink',
+                    params: `https://mplayer.1205.moe/`
+                },
+                {
+                    title: '播放器信息',
+                    targetFunction: 'toggleInfoPanel'
+                }
+            ],
             videos: [
                 {
-                    title: '【VOCALOID IA】Moon-Viewing Recital "オツキミリサイタル"【Animation MV】',
-                    src: 'https://api.dogecloud.com/player/get.m3u8?vcode=ab3d12094107f381&userId=1132&flsign=014cc0ce63f0bd8ca24e2d1b8454b138&ext=.m3u8'
+                    title: '[hls, subtitles, qualities]Plastic Memories EP. 1',
+                    src: "https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/PlasticMemories/ep1/hls/PlasticMemoriesEP1.m3u8",
+                    tracks: [
+                        {
+                            srclang: 'en',
+                            src: './en_US.vtt',
+                            label: "English(USA)",
+                            kind: "captions"
+                        },
+                        {
+                            srclang: 'zh',
+                            src: './zh_CN.vtt',
+                            label: "中文(中国)",
+                            kind: "captions"
+                        },
+                    ],
+                    images: ['./isla.jpg']
+                },
+                {
+                    title: '[dash, qualities]Plastic Memories EP. 2',
+                    src: "https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/PlasticMemories/ep2/dash/360_out.mpd"
+                },
+                {
+                    title: '[native]Plastic Memories EP. 3',
+                    src: "https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/PlasticMemories/ep2/native/PlasticMemoriesEP2.mp4"
+                },
+                {
+                    title: '[flv]Your Lie in April EP. 3',
+                    src: "https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/YourLieInApril/ep1/flv/EP1.flv"
                 }
             ]
         })
