@@ -52,19 +52,19 @@ class Player extends React.Component {
                     src: "https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/PlasticMemories/ep1/hls/PlasticMemoriesEP1.m3u8",
                     tracks: [
                         {
-                            srclang: 'en',
-                            src: './en_US.vtt',
-                            label: "English(USA)",
+                            srclang: 'zh_CN',
+                            src: 'https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/PlasticMemories/ep1/subtitles/PlasticMemoriesEP1.sc.vtt',
+                            label: "简体字",
                             kind: "captions"
                         },
                         {
-                            srclang: 'zh',
-                            src: './zh_CN.vtt',
-                            label: "中文(中国)",
+                            srclang: 'zh_TW',
+                            src: 'https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/PlasticMemories/ep1/subtitles/PlasticMemoriesEP1.tc.vtt',
+                            label: "正體字",
                             kind: "captions"
-                        },
+                        }
                     ],
-                    images: ['./isla.jpg']
+                    images: ['https://mplayer-demo-1255545160.cos.ap-nanjing.myqcloud.com/PlasticMemories/ep1/images/isla.jpg']
                 },
                 {
                     title: '[dash, qualities]Plastic Memories EP. 2',

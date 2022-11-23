@@ -192,6 +192,28 @@
   "resolved" "https://registry.npmmirror.com/base64-js/-/base64-js-1.5.1.tgz"
   "version" "1.5.1"
 
+"bcp-47-match@^1.0.0", "bcp-47-match@^1.0.3":
+  "integrity" "sha512-LggQ4YTdjWQSKELZF5JwchnBa1u0pIQSZf5lSdOHEdbVP55h0qICA/FUp3+W99q0xqxYa1ZQizTUH87gecII5w=="
+  "resolved" "https://registry.npmjs.org/bcp-47-match/-/bcp-47-match-1.0.3.tgz"
+  "version" "1.0.3"
+
+"bcp-47-normalize@^1.1.1":
+  "integrity" "sha512-jWZ1Jdu3cs0EZdfCkS0UE9Gg01PtxnChjEBySeB+Zo6nkqtFfnvtoQQgP1qU1Oo4qgJgxhTI6Sf9y/pZIhPs0A=="
+  "resolved" "https://registry.npmjs.org/bcp-47-normalize/-/bcp-47-normalize-1.1.1.tgz"
+  "version" "1.1.1"
+  dependencies:
+    "bcp-47" "^1.0.0"
+    "bcp-47-match" "^1.0.0"
+
+"bcp-47@^1.0.0":
+  "integrity" "sha512-Y9y1QNBBtYtv7hcmoX0tR+tUNSFZGZ6OL6vKPObq8BbOhkCoyayF6ogfLTgAli/KuAEbsYHYUNq2AQuY6IuLag=="
+  "resolved" "https://registry.npmjs.org/bcp-47/-/bcp-47-1.0.8.tgz"
+  "version" "1.0.8"
+  dependencies:
+    "is-alphabetical" "^1.0.0"
+    "is-alphanumerical" "^1.0.0"
+    "is-decimal" "^1.0.0"
+
 "big.js@^5.2.2":
   "integrity" "sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ=="
   "resolved" "https://registry.npmmirror.com/big.js/-/big.js-5.2.2.tgz"
@@ -331,6 +353,11 @@
   dependencies:
     "mimic-response" "^1.0.0"
 
+"codem-isoboxer@0.3.6":
+  "integrity" "sha512-LuO8/7LW6XuR5ERn1yavXAfodGRhuY2yP60JTZIw5yNYMCE5lUVbk3NFUCJxjnphQH+Xemp5hOGb1LgUXm00Xw=="
+  "resolved" "https://registry.npmjs.org/codem-isoboxer/-/codem-isoboxer-0.3.6.tgz"
+  "version" "0.3.6"
+
 "color-convert@^1.9.0":
   "integrity" "sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg=="
   "resolved" "https://registry.npmmirror.com/color-convert/-/color-convert-1.9.3.tgz"
@@ -390,6 +417,21 @@
     "lru-cache" "^4.0.1"
     "shebang-command" "^1.2.0"
     "which" "^1.2.9"
+
+"dashjs@^4.5.1":
+  "integrity" "sha512-pC5p+cSsXMJGuGgtt21ccpNkENhu6/2+niTU1Krq18Zr9dSMAO4J9jv4IlAJnWAok8hRDKyV9a1jskUiGPCnKQ=="
+  "resolved" "https://registry.npmjs.org/dashjs/-/dashjs-4.5.1.tgz"
+  "version" "4.5.1"
+  dependencies:
+    "bcp-47-match" "^1.0.3"
+    "bcp-47-normalize" "^1.1.1"
+    "codem-isoboxer" "0.3.6"
+    "es6-promise" "^4.2.8"
+    "fast-deep-equal" "2.0.1"
+    "html-entities" "^1.2.1"
+    "imsc" "^1.0.2"
+    "localforage" "^1.7.1"
+    "ua-parser-js" "^1.0.2"
 
 "debug@^4.0.0":
   "integrity" "sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw=="
@@ -516,6 +558,11 @@
   dependencies:
     "once" "^1.4.0"
 
+"es6-promise@^4.2.8":
+  "integrity" "sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w=="
+  "resolved" "https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.8.tgz"
+  "version" "4.2.8"
+
 "escape-string-regexp@^1.0.2":
   "integrity" "sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ= sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg=="
   "resolved" "https://registry.npmmirror.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
@@ -591,6 +638,11 @@
   "resolved" "https://registry.npmmirror.com/extend/-/extend-3.0.2.tgz"
   "version" "3.0.2"
 
+"fast-deep-equal@2.0.1":
+  "integrity" "sha512-bCK/2Z4zLidyB4ReuIsvALH6w31YfAQDmXMqMx6FyfHqvBxtjC0eRumeSu4Bs3XtXwpyIywtSTrVT99BxY1f9w=="
+  "resolved" "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz"
+  "version" "2.0.1"
+
 "fd-slicer@~1.1.0":
   "integrity" "sha1-JcfInLH5B3+IkbvmHY85Dq4lbx4= sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g=="
   "resolved" "https://registry.npmmirror.com/fd-slicer/-/fd-slicer-1.1.0.tgz"
@@ -643,6 +695,14 @@
     "filename-reserved-regex" "^2.0.0"
     "strip-outer" "^1.0.0"
     "trim-repeated" "^1.0.0"
+
+"flv.js@^1.6.2":
+  "integrity" "sha512-xre4gUbX1MPtgQRKj2pxJENp/RnaHaxYvy3YToVVCrSmAWUu85b9mug6pTXF6zakUjNP2lFWZ1rkSX7gxhB/2A=="
+  "resolved" "https://registry.npmjs.org/flv.js/-/flv.js-1.6.2.tgz"
+  "version" "1.6.2"
+  dependencies:
+    "es6-promise" "^4.2.8"
+    "webworkify-webpack" "^2.1.5"
 
 "focus-visible@^5.1.0":
   "integrity" "sha512-nPer0rjtzdZ7csVIu233P2cUm/ks/4aVSI+5KUkYrYpgA7ujgC3p6J7FtFU+AIMWwnwYQOB/yeiOITxFeYIXiw=="
@@ -801,6 +861,11 @@
   "resolved" "https://registry.npmjs.org/hls.js/-/hls.js-1.2.7.tgz"
   "version" "1.2.7"
 
+"html-entities@^1.2.1":
+  "integrity" "sha512-8nxjcBcd8wovbeKx7h3wTji4e6+rhaVuPNpMqwWgnHh+N9ToqsCs6XztWRBPQ+UtzsoMAdKZtUENoVzU/EMtZA=="
+  "resolved" "https://registry.npmjs.org/html-entities/-/html-entities-1.4.0.tgz"
+  "version" "1.4.0"
+
 "http-cache-semantics@3.8.1":
   "integrity" "sha512-5ai2iksyV8ZXmnZhHH4rWPoxxistEexSi5936zIQ1bnNTW5VnA85B6P/VpXiRM017IgRvb2kKo1a//y+0wSp3w=="
   "resolved" "https://registry.npmmirror.com/http-cache-semantics/-/http-cache-semantics-3.8.1.tgz"
@@ -810,6 +875,18 @@
   "integrity" "sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA=="
   "resolved" "https://registry.npmmirror.com/ieee754/-/ieee754-1.2.1.tgz"
   "version" "1.2.1"
+
+"immediate@~3.0.5":
+  "integrity" "sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ=="
+  "resolved" "https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz"
+  "version" "3.0.6"
+
+"imsc@^1.0.2":
+  "integrity" "sha512-IY0hMkVTNoqoYwKEp5UvNNKp/A5jeJUOrIO7judgOyhHT+xC6PA4VBOMAOhdtAYbMRHx9DTgI8p6Z6jhYQPFDA=="
+  "resolved" "https://registry.npmjs.org/imsc/-/imsc-1.1.3.tgz"
+  "version" "1.1.3"
+  dependencies:
+    "sax" "1.2.1"
 
 "inherits@^2.0.1", "inherits@~2.0.3":
   "integrity" "sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ=="
@@ -969,6 +1046,13 @@
   "resolved" "https://registry.npmmirror.com/kind-of/-/kind-of-6.0.3.tgz"
   "version" "6.0.3"
 
+"lie@3.1.1":
+  "integrity" "sha512-RiNhHysUjhrDQntfYSfY4MU24coXXdEOgw9WGcKHNeEwffDYbF//u87M1EWaMGzuFoSbqW0C9C6lEEhDOAswfw=="
+  "resolved" "https://registry.npmjs.org/lie/-/lie-3.1.1.tgz"
+  "version" "3.1.1"
+  dependencies:
+    "immediate" "~3.0.5"
+
 "loader-utils@^2.0.0":
   "integrity" "sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ=="
   "resolved" "https://registry.npmmirror.com/loader-utils/-/loader-utils-2.0.0.tgz"
@@ -977,6 +1061,13 @@
     "big.js" "^5.2.2"
     "emojis-list" "^3.0.0"
     "json5" "^2.1.2"
+
+"localforage@^1.7.1":
+  "integrity" "sha512-14/H1aX7hzBBmmh7sGPd+AOMkkIrHM3Z1PAyGgZigA1H1p5O5ANnMyWzvpAETtG68/dC4pC0ncy3+PPGzXZHPg=="
+  "resolved" "https://registry.npmjs.org/localforage/-/localforage-1.10.0.tgz"
+  "version" "1.10.0"
+  dependencies:
+    "lie" "3.1.1"
 
 "longest-streak@^2.0.0":
   "integrity" "sha512-vM6rUVCVUJJt33bnmHiZEvr7wPT78ztX7rojL+LW51bHtLh6HTjx84LA5W4+oa6aKEJA7jJu5LR6vQRBpA5DVg=="
@@ -1705,6 +1796,11 @@
   "resolved" "https://registry.npmmirror.com/safe-buffer/-/safe-buffer-5.1.2.tgz"
   "version" "5.1.2"
 
+"sax@1.2.1":
+  "integrity" "sha512-8I2a3LovHTOpm7NV5yOyO8IHqgVsfK4+UuySrXU8YXkSRX7k6hCV9b3HrkKCr3nMpgj+0bmocaJJWpvp1oc7ZA=="
+  "resolved" "https://registry.npmjs.org/sax/-/sax-1.2.1.tgz"
+  "version" "1.2.1"
+
 "scheduler@^0.20.1":
   "integrity" "sha512-LKTe+2xNJBNxu/QhHvDR14wUXHRQbVY5ZOYpOGWRzhydZUqrLb2JBvLPY7cAqFmqrWuDED0Mjk7013SZiOz6Bw=="
   "resolved" "https://registry.npmmirror.com/scheduler/-/scheduler-0.20.1.tgz"
@@ -1934,6 +2030,11 @@
   "resolved" "https://registry.npmmirror.com/tslib/-/tslib-2.0.2.tgz"
   "version" "2.0.2"
 
+"ua-parser-js@^1.0.2":
+  "integrity" "sha512-dXVsz3M4j+5tTiovFVyVqssXBu5HM47//YSOeZ9fQkdDKkfzv2v3PP1jmH6FUyPW+yCSn7aBVK1fGGKNhowdDA=="
+  "resolved" "https://registry.npmjs.org/ua-parser-js/-/ua-parser-js-1.0.32.tgz"
+  "version" "1.0.32"
+
 "unbzip2-stream@^1.0.9":
   "integrity" "sha512-mlExGW4w71ebDJviH16lQLtZS32VKqsSfk80GCfUlwT/4/hNRFsoscrF/c++9xinkMzECL1uL9DDwXqFWkruPg=="
   "resolved" "https://registry.npmmirror.com/unbzip2-stream/-/unbzip2-stream-1.4.3.tgz"
@@ -2061,6 +2162,11 @@
   "version" "4.0.3"
   dependencies:
     "loose-envify" "^1.0.0"
+
+"webworkify-webpack@^2.1.5":
+  "integrity" "sha512-2akF8FIyUvbiBBdD+RoHpoTbHMQF2HwjcxfDvgztAX5YwbZNyrtfUMgvfgFVsgDhDPVTlkbb5vyasqDHfIDPQw=="
+  "resolved" "https://registry.npmjs.org/webworkify-webpack/-/webworkify-webpack-2.1.5.tgz"
+  "version" "2.1.5"
 
 "which@^1.2.9":
   "integrity" "sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ=="
