@@ -1,0 +1,21 @@
+## Playing native videos
+
+
+DEMO
+```html
+<script src="https://cdn.jsdelivr.net/npm/@wenzi7777/mplayer@latest/dist/mplayer.bundle.min.js"></script>
+<div id={'mplayer'}></div>
+<script>
+    let options = {
+        videos: [
+            {
+                title: 'video title',
+                src: 'video src.mp4'
+            }
+        ]
+    }
+    const mplayer = new MPlayer(document.querySelector('#mplayer'), options)
+</script>
+```
+
+native videos **do not support** multi-resolution.

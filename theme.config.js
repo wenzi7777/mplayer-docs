@@ -62,6 +62,7 @@ export default {
     footerText: <>MPlayer created by NickHsu, licensed under MPL 2.0</>,
     unstable_faviconGlyph: '👋',
     i18n: [
-        {locale: 'zh', text: '简体字'}
+        {locale: 'zh', text: '简体字'},
+        {locale: 'en', text: 'English'}
     ]
 }

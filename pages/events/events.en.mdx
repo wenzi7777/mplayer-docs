@@ -1,0 +1,62 @@
+## Listening events
+
+**MPlayer provided many build-in events, you can listen them by using the api provided here.**
+
+**api**
+```javascript
+const mplayer = new MPlayer(element, options)
+mplayer.apis.on('eventName', () => {
+    console.log('--')
+})
+```
+
+**video events**
+- abort
+- canplay
+- canplaythrough
+- contextmenu
+- durationchange
+- emptied
+- ended
+- error
+- loadeddata
+- loadedmetadata
+- loadstart
+- mozaudioavailable
+- pause
+- play
+- playing
+- progress
+- ratechange
+- seeked
+- seeking
+- stalled
+- suspend
+- timeupdate
+- volumechange
+- waiting
+- click
+- enterpictureinpicture
+- leavepictureinpicture
+
+**MPlayer events**
+- mplayer:reload
+- mplayer:screenshot
+- mplayer:error
+- mplayer:recognizedMediaType
+- mplayer:play
+- mplayer:pause
+- mplayer:muted
+- mplayer:skipFailed
+- mplayer:skipFailed
+- mplayer:skip
+- mplayer:exitPiP
+- mplayer:enterPiP
+- mplayer:enterFullscreen
+- mplayer:exitFullscreen
+- mplayer:openLink
+- mplayer:useMobileStyle
+- mplayer:cancelMobileStyle
+- mplayer:pluginsDestroyed
+- mplayer:exitTheaterMode
+- mplayer:enterTheaterMode

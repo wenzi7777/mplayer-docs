@@ -15,7 +15,7 @@ class Player extends React.Component {
         window.Hls = Hls
         window.flvjs = flvjs
         this.state.mplayer = new MPlayer(document.getElementById('mplayer'), {
-            lang: 'zh_CN',
+            lang: this.props.lang === 'en' ? 'en_US' : 'zh_CN',
             playerMode: 'normal',
             autoplay: false,
             hints: {

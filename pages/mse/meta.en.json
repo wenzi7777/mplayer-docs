@@ -1,0 +1,6 @@
+{
+  "hls": "HLS",
+  "dash": "DASH",
+  "flv": "FLV",
+  "native": "NATIVE"
+}

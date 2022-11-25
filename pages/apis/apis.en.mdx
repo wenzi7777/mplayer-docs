@@ -1,0 +1,41 @@
+## API List
+**MPlayer**has many build-in apis, you can access them by using:   **MPlayer instance name**.apis\[API name\](params)
+
+|NAME|PARAMS|RETURN VALUE|DESC|DEMO|
+|:--:|:--:|:--:|:--:|:--:|
+|play|void|void|start playing video|mplayer.apis.play()|
+|pause|void|void|stop playing video|mplayer.apis.pause()|
+|togglePlayPause|void|void|play or pause video|togglePlayPause.apis.play()|
+|reload|void|void|reload MPlayer|mplayer.apis.reload()|
+|mute|void|void|mute video|mplayer.apis.mute()|
+|unmute|void|void|unmute video|mplayer.apis.unmute()|
+|toggleMute|void|void|mute or unmute video|mplayer.apis.toggleMute()|
+|skip|time:Number|void|seek video|mplayer.apis.skip(-5)|
+|enterPiP|void|void|enter picture in picture mode|mplayer.apis.enterPiP()|
+|exitPiP|void|void|leave picture in picture mode|mplayer.apis.exitPiP()|
+|toggleMiniPlayer|void|void|enter or leave picture in picture mode|mplayer.apis.toggleMiniPlayer()|
+|enterFullscreen|void|void|enter fullscreen mode|mplayer.apis.enterFullscreen()|
+|exitFullscreen|void|void|leave fullscreen mode|mplayer.apis.exitFullscreen()|
+|toggleFullscreen|void|void|enter or leave fullscreen mode|mplayer.apis.toggleFullscreen()|
+|videoResolution|void|Object|get resolution info of current video|mplayer.apis.videoResolution()|
+|videoURL|void|String|get url of current video|mplayer.apis.videoURL()|
+|buffered|void|String|get buffered seconds of current video|mplayer.apis.buffered()|
+|currentTime|void|String|get played seconds of current video|mplayer.apis.currentTime()|
+|openLink|link:String|void|open a link|mplayer.apis.openLink(linkAddress)|
+|toggleInfoPanel|void|void|open or close info panel|mplayer.apis.toggleInfoPanel()|
+|useMobileStyle|void|void|apply mobile style|mplayer.apis.useMobileStyle()|
+|cancelMobileStyle|void|void|cancel mobile style|mplayer.apis.cancelMobileStyle()|
+|toggleMobileStyle|void|void|apply or cancel mobile style|mplayer.apis.toggleMobileStyle()|
+|destroyPlugins|void|void|destroy plugin instances|mplayer.apis.destroyPlugins()|
+|enterTheaterMode|void|void|enter theater mode|mplayer.apis.enterTheaterMode()|
+|exitTheaterMode|void|void|leave theater mode|mplayer.apis.exitTheaterMode()|
+|toggleTheaterMode|void|void|enter or leave theater mode|mplayer.apis.toggleTheaterMode()|
+|destroy|void|void|destroy MPlayer instance|mplayer.apis.destroy()|
+|playerContainer|void|void|get video container|mplayer.apis.playerContainer()|
+|player|void|void|get video tag|mplayer.apis.player()|
+|playNext|void|void|play next|mplayer.apis.playNext()|
+|playPrevious|void|void|play previous|mplayer.apis.playPrevious()|
+|publishNotice|contents:String, delay:Number|void|publish notice|mplayer.apis.publishNotice('测试通知', 3000)|
+|showHints|void|void|show hints|mplayer.apis.showHints()|
+|hideHints|void|void|hide hints|mplayer.apis.hideHints()|
+|toggleHints|void|void|show or hide hints|mplayer.apis.toggleHints()|
