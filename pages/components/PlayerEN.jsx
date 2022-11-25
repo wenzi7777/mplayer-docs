@@ -1,7 +1,7 @@
 import React from "react";
 import Hls from "hls.js";
 
-class Player extends React.Component {
+class PlayerEN extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -15,7 +15,7 @@ class Player extends React.Component {
         window.Hls = Hls
         window.flvjs = flvjs
         this.state.mplayer = new MPlayer(document.getElementById('mplayer'), {
-            lang: this.props.lang === 'en' ? 'en_US' : 'zh_CN',
+            lang: 'en_US',
             playerMode: 'normal',
             autoplay: false,
             hints: {
@@ -39,12 +39,12 @@ class Player extends React.Component {
             infoPanel: ['basicVideoInfo', 'playerFPS', 'videoURL', 'connectionStatus', 'date', 'playerInfo'],
             contextMenu: [
                 {
-                    title: '关于MPlayer',
+                    title: 'MPlayer',
                     targetFunction: 'openLink',
                     params: `https://mplayer.1205.moe/`
                 },
                 {
-                    title: '播放器信息',
+                    title: 'Info Panel',
                     targetFunction: 'toggleInfoPanel'
                 }
             ],
@@ -87,4 +87,4 @@ class Player extends React.Component {
     }
 }
 
-export default Player
+export default PlayerEN
