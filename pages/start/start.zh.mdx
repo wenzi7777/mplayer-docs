@@ -63,6 +63,7 @@ const mplayer = new MPlayer(element, options);
 |playerMode|normal|normal, live|String|播放器模式|否|
 |autoplay|false|true, false|Boolean|是否自动播放视频，请注意自动播放会在某些配置下的浏览器被禁用|否|
 |hints|false|请在'参数详情'页面查看详细信息|Object|播放器'提示'功能|否|
+|spotlight|false|请在'参数详情'页面查看详细信息|Object|播放器'聚光灯'功能|否|
 |theme|#39c5bb|任意的Hex色值|String|可选任意的Hex色值来更换播放器主题色，注意不支持rgb或者rgba色值|否|
 |tools|默认启用所有支持的工具|请参照'参数详情'页面|Array|播放器工具|否|
 |hotkey|true|true, false|Boolean|是否启用热键|否|
@@ -127,6 +128,28 @@ hints = {
 ```
 
 ![hints示例图片](../../public/hints.png)
+
+### spotlight
+MPlayer提供的'聚光灯'功能，默认为关闭。
+开启后，可以提供类似于Youtube的环境光功能。
+
+**默认值**
+```json
+{
+    "enabled": false,
+    "backgroundColor": "#FFFFFF"
+}
+```
+
+**使用示例**
+```javascript
+spotlight = {
+  "enabled": true, // 标记为启用提示
+  "backgroundColor": "#FFFFFF" // 您网页背景主色，仅支持Hex色值
+}
+```
+
+![spotlight示例图片](../../public/spotlight.png)
 
 ### theme
 播放器主题色

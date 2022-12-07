@@ -28,6 +28,10 @@ class PlayerCN extends React.Component {
                     }
                 ]
             },
+            spotlight: {
+              enabled: true,
+              backgroundColor: '#FFFFFF'
+            },
             theme: '#39c5bb',
             loop: false,
             tools: ['timeline', 'playPause', 'volumeControl', 'durationViewer', 'screenshot', 'playerSettings', 'enablePlaylist', 'subtitles', 'miniPlayer', 'theaterMode', 'fullscreen'],

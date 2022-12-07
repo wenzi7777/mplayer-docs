@@ -63,6 +63,7 @@ You can customize your own MPlayer instance by passing in MPlayer config object.
 |playerMode|normal|normal, live|String|MPLayer mode|NO|
 |autoplay|false|true, false|Boolean|autoplay video when MPlayer loading completely.|NO|
 |hints|false|view more in 'Params' page|Object|Hints feature configs|NO|
+|spotlight|false|view more in 'Params' page|Object|Spotlight feature configs|NO|
 |theme|#39c5bb|any Hex color|String|MPlayer theme color, only Hex color is ok.|NO|
 |tools|all available tools are enabled by default.|view more in 'Params' page|Array|MPlayer controls config|NO|
 |hotkey|true|true, false|Boolean|enable hotkey|NO|
@@ -127,6 +128,29 @@ hints = {
 ```
 
 ![hints demo image](../../public/hints.png)
+
+### spotlight
+Spotlight config, spotlight is disabled by default.
+Spotlight is a feature which is similar to Youtube Ambient Mode.
+You can enable spotlight by provide a correct config object.
+
+**默认值**
+```json
+{
+    "enabled": false,
+    "backgroundColor": "#FFFFFF"
+}
+```
+
+**使用示例**
+```javascript
+spotlight = {
+  "enabled": true, // enable it
+  "backgroundColor": "#FFFFFF" // your main background color of your website, only Hex color is supported.
+}
+```
+
+![spotlight demo image](../../public/spotlight.png)
 
 ### theme
 theme color
